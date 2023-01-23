@@ -1,0 +1,28 @@
+#
+# GEWINN AUSGABE
+#
+# Nachdem der Spieler gewonnen hat, soll er eine von fünf zufälligen Nachrichten erhalten,
+# welche ihn darüber informieren, dass er gewonnen hat.
+#
+
+import time
+import random
+
+def gewonnen():
+    time.sleep(0.1)
+    print("")
+    
+    zufallszahl = random.randint(0,4) # Zahl zwischen 0 und 4
+
+    if zufallszahl == 0:
+        print("Du hast gewonnen!")
+    elif zufallszahl == 1:
+        print("Heureka! Du bist siegreich!")
+    elif zufallszahl == 2:
+        print("Hurra! Du gewinnst dieses Spiel!")
+    elif zufallszahl == 3:
+        print("Du bist ein Gewinner!")
+    elif zufallszahl == 4:
+        print("Badaboom! Gewonnen!")
+
+gewonnen()
